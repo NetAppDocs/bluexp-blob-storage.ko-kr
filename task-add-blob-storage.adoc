@@ -1,0 +1,102 @@
+---
+sidebar: sidebar 
+permalink: task-add-blob-storage.html 
+keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment, add storage accounts 
+summary: Canvas에서 Azure Blob 저장소 작업 환경을 사용할 수 있게 되면 BlueXP에서 직접 추가 저장소 계정을 추가할 수 있습니다. 
+---
+= Azure Blob 저장소 계정을 추가합니다
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Canvas에서 Azure Blob 저장소 작업 환경을 사용할 수 있게 되면 BlueXP에서 직접 추가 저장소 계정을 추가할 수 있습니다.
+
+.단계
+. Canvas에서 Azure Blob 저장소 작업 환경을 두 번 클릭하여 Azure Blob 저장소 개요 페이지를 보고 * 저장소 계정 추가 * 를 클릭합니다.
++
+image:screenshot-add-blob-storage-button.png["Azure Blob 저장소 작업 환경 및 저장소 계정 추가 단추의 세부 정보를 보여 주는 스크린샷"]
+
++
+Add storage account_page 가 표시됩니다.
+
++
+image:screenshot-add-blob-storage.png["고유한 Azure Blob 저장소 계정을 만들 수 있도록 저장소 계정 추가 페이지를 보여 주는 스크린샷"]
+
+. Project details_(프로젝트 세부 정보) 섹션에 필요한 정보를 입력합니다.
++
+[cols="25,75"]
+|===
+| 필드에 입력합니다 | 설명 
+
+
+| 구독 | 새 저장소 계정에 대한 Azure 구독을 선택합니다. 
+
+
+| 리소스 그룹  a| 
+이 스토리지 계정에 대한 기존 리소스 그룹을 선택합니다.
+
+https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal["리소스 그룹에 대해 자세히 알아보십시오"^].
+
+|===
+. instance details_ 섹션에서 스토리지 계정의 이름을 입력하고 스토리지 계정이 생성될 지역(또는 지역)을 선택합니다.
++
+[cols="25,75"]
+|===
+| 필드에 입력합니다 | 설명 
+
+
+| 저장소 계정 이름입니다 | 저장소 계정에 사용할 이름을 입력합니다. 이름은 3-24자 사이여야 하며 숫자와 소문자만 포함할 수 있습니다. 
+
+
+| Azure 지역  a| 
+목록에서 저장소 계정을 생성할 지역을 선택합니다.
+
+저장소 계정에 해당하는 지역을 선택합니다. https://learn.microsoft.com/en-us/azure/availability-zones/az-overview["Azure 지역 및 가용성 영역에 대한 자세한 내용은 Microsoft 설명서를 참조하십시오"^].
+
+모든 유형의 스토리지 계정 또는 이중화 구성에 대해 일부 영역이 지원되지 않습니다. https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy["Azure 저장소 중복성에 대한 자세한 내용은 Microsoft 설명서를 참조하십시오"^].
+
+또한 지역 선택은 대금 청구에 영향을 미칠 수 있습니다. https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview#storage-account-billing["Azure Storage 계정 청구에 대한 자세한 내용은 Microsoft 설명서를 참조하십시오"^].
+
+
+
+| 성능 유형  a| 
+Standard * 또는 * Premium * 성능 스토리지 중 무엇을 사용할지를 선택합니다. https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview#types-of-storage-accounts["스토리지 계정 유형에 대한 자세한 내용은 Microsoft 설명서를 참조하십시오"^].
+
+** _Standard_performance는 범용 v2 스토리지 계정에 사용됩니다. 이 유형의 계정은 대부분의 시나리오에 권장됩니다.
+** _PREMIUM_performance는 짧은 지연 시간이 필요한 시나리오에 사용됩니다. Block Blob, File 공유 및 Page Blob의 세 가지 유형의 프리미엄 스토리지 계정을 사용할 수 있습니다.
+
+
+|===
+. Tags_ 섹션에서는 최대 10개의 태그 키/값 쌍을 입력하여 리소스를 그룹화할 수 있습니다.
++
+태그는 리소스를 그룹화하여 애플리케이션, 환경, 지역, 클라우드 공급자 등을 식별하는 데 사용할 수 있는 메타데이터입니다. 태그가 스토리지 계정에 추가될 때 개체에 적용되도록 태그를 스토리지 계정에 추가할 수 있습니다.
+
++
+BlueXP에서 생성된 새 저장소 계정에서는 기본적으로 태그가 사용되지 않습니다. https://learn.microsoft.com/en-us/azure/storage/blobs/storage-manage-find-blobs["Microsoft 문서에서 태그 지정에 대한 자세한 내용을 확인하십시오"^].
+
+. Encryption_ 섹션에서 저장소 계정의 데이터에 대한 액세스를 보호하는 데 사용할 데이터 암호화 유형을 선택합니다.
++
+[cols="25,75"]
+|===
+| 데이터 암호화 유형입니다 | 설명 
+
+
+| Microsoft 관리 키 | 기본적으로 Microsoft에서 관리하는 암호화 키는 데이터를 암호화하는 데 사용됩니다. 
+
+
+| 고객이 관리하는 키  a| 
+기본 Microsoft 관리 암호화 키를 사용하는 대신 고객이 관리하는 키를 사용하여 데이터를 암호화할 수 있습니다. 고객이 관리하는 키를 사용하려는 경우 키 볼트와 이 페이지의 키를 선택할 수 있도록 키를 이미 만들어야 합니다.
+
+키는 저장소 계정과 동일한 구독에 있거나 다른 구독을 선택할 수 있습니다.
+
+|===
++
+에 대한 자세한 내용은 Microsoft Azure 설명서를 참조하십시오 https://learn.microsoft.com/en-us/azure/storage/common/storage-service-encryption["Microsoft 관리 키에 대한 자세한 정보"^], 및 https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-overview["고객 관리 키에 대한 자세한 정보"^].
+
+. 추가 * 를 클릭하면 버킷이 생성됩니다.
+

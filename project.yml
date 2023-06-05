@@ -1,0 +1,67 @@
+---
+settings:
+  name: Azure Blob storage
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: Azure Blob 스토리지 문서
+    url: "/index.html"
+  - title: 릴리스 정보
+    url: "/whats-new.html"
+  - title: 시작하십시오
+    entries:
+    - title: Azure Blob 저장소 계정을 봅니다
+      url: "/task-view-azure-blob-storage.html"
+  - title: Azure Blob 저장소 계정을 관리합니다
+    entries:
+    - title: 새 스토리지 계정을 추가합니다
+      url: "/task-add-blob-storage.html"
+    - title: 저장소 계정 설정을 변경합니다
+      url: "/task-change-blob-storage-settings.html"
+    - title: Azure Blob 저장소에서 NetApp 데이터 서비스 사용
+      url: "/task-blob-enable-data-services.html"
+  - title: 지식 및 지원
+    entries:
+    - title: 지원을 위해 등록하십시오
+      url: "/task-support-registration.html"
+    - title: 도움을 받으십시오
+      url: "/task-get-help.html"
+  - title: 법적 고지
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: Azure Blob 저장소 계정을 봅니다
+      url: task-view-azure-blob-storage.html
+  - title: Azure Blob 저장소 계정을 관리합니다
+    links:
+    - title: Blob 저장소 계정을 추가합니다
+      url: task-add-blob-storage.html
+    - title: 저장소 계정 설정을 변경합니다
+      url: task-change-blob-storage-settings.html
+    - title: Azure Blob 저장소에서 NetApp 데이터 서비스 사용
+      url: task-blob-enable-data-services.html
+  - title: 추가 정보
+    links:
+    - title: BlueXP 외부에서 관리하기 위한 Azure Blob 저장소 문서
+      url: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction
+  - title: 블로그 및 커뮤니티
+    links:
+    - title: NetApp 커뮤니티
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: BlueXP 블로그
+      url: https://bluexp.netapp.com/blog/topic/cloud-manager
+    - title: BlueXP 웨비나
+      url: https://bluexp.netapp.com/events
+product-family:
+  name: BlueXP
+  repo: bluexp-family
+  sidebar_label: 모든 BlueXP 설명서

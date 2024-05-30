@@ -1,0 +1,31 @@
+---
+indexpage:
+  title: Azure Blob 스토리지 설명서
+  summary: BlueXP 시스템에서 Azure Blob 저장소 사용을 시작하십시오.
+  keywords: bluexp, documentation, storage, azure blob storage
+  lead: BlueXP 시스템에서 Azure Blob 저장소 사용을 시작하십시오.
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: Azure Blob 저장소 계정을 봅니다
+      url: task-view-azure-blob-storage.html
+  - title: Azure Blob 저장소 계정을 관리합니다
+    links:
+    - title: Blob 저장소 계정을 추가합니다
+      url: task-add-blob-storage.html
+    - title: 저장소 계정 설정을 변경합니다
+      url: task-change-blob-storage-settings.html
+    - title: Azure Blob 저장소에서 NetApp 데이터 서비스 사용
+      url: task-blob-enable-data-services.html
+  - title: 추가 정보
+    links:
+    - title: BlueXP 외부에서 관리하기 위한 Azure Blob 저장소 문서
+      url: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction
+  - title: 블로그 및 커뮤니티
+    links:
+    - title: NetApp 커뮤니티
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: BlueXP 블로그
+      url: https://bluexp.netapp.com/blog/topic/cloud-manager
+    - title: BlueXP 웨비나
+      url: https://bluexp.netapp.com/events

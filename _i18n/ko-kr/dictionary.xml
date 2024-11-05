@@ -123,7 +123,6 @@
   <block id="3bec690d07df1a3a36c8a3122654fc24" category="section-title">2023년 6월 5일</block>
   <block id="f9037e3eb23130835367334e3aa5a34b" category="section-title">BlueXP에서 새 스토리지 계정을 추가할 수 있습니다</block>
   <block id="a39e8d6ee8bc43ef75656b419fe7a86e" category="inline-link">새 Azure Blob 저장소 계정을 추가하는 방법을 알아보십시오</block>
-  <block id="34738f8a469a7971575b53ff1435539f" category="paragraph">BlueXP Canvas에서 Azure Blob Storage를 한동안 볼 수 있는 기능이 있습니다. 이제 새 저장소 계정을 추가하고 기존 저장소 계정의 속성을 BlueXP에서 직접 변경할 수 있습니다.<block ref="7f415337c5df45cbb7bfeb019667a476" category="inline-link-rx"></block>.</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">NetApp 기술 지원 팀과 지원 케이스를 생성하기 전에 NetApp Support 사이트 계정을 BlueXP에 추가한 다음 지원 등록을 해야 합니다.</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">지원을 위해 등록하십시오</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">지원 등록 개요</block>
@@ -308,4 +307,5 @@
   <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">Cloud Volumes ONTAP에서 다음과 같은 주요 워크플로우를 사용하려면 NetApp 지원 사이트 자격 증명을 BlueXP  조직과 연결해야 합니다.</block>
   <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">NSS 자격 증명을 BlueXP  조직과 연결하는 것은 BlueXP  사용자 로그인과 연결된 NSS 계정과 다릅니다.</block>
   <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">이러한 NSS 자격 증명은 특정 BlueXP  조직 ID와 연결됩니다. BlueXP  조직에 속한 사용자는 * 지원 &gt; NSS 관리 * 에서 이러한 자격 증명에 액세스할 수 있습니다.</block>
+  <block id="3e9d2d36df8c91d7e9151cc5775042a8" category="paragraph">BlueXP Canvas에서 Azure Blob Storage를 한동안 볼 수 있는 기능이 있습니다. 이제 BlueXP 에서 직접 새 스토리지 계정을 추가하고 기존 스토리지 계정의 속성을 변경할 수 있습니다.<block ref="432ae671c636de993f8b5290b51ad53f" category="inline-link-rx"></block>..</block>
 </blocks>
